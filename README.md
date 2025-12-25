@@ -2,26 +2,19 @@
 
 
 ## Related
--
 
 ---
-
 <details>
-
 <summary>
   Research
 </summary>
-
 # How to Download JustForFans Videos: Technical Analysis of Stream Patterns, CDNs, and Download Methods
-
 *A comprehensive research document analyzing JustForFans's video infrastructure, embed patterns, stream formats, and optimal download strategies using modern tools*
-
 **Authors**: SERP Apps  
 **Date**: December 2025  
 **Version**: 1.0
-
 ---
-
+- [JustForFans Downloader gist](https://gist.github.com/devinschumacher/948cdae40dd4de68f6631aa9cdbc3e07)
 ## Abstract
 
 This research document outlines JustForFans' authenticated video delivery, signed HLS manifests, and best practices for downloading content with user-provided credentials.
