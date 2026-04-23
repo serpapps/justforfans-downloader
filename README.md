@@ -1,4 +1,4 @@
-# JustForFans Downloader (Browser Extension)
+# JustForFans Video Downloader (Browser Extension) | How to Download JustForFans Videos
 
 > Save JustForFans videos, images, galleries, and text posts from creator feeds directly in your browser.
 
