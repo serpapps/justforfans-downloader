@@ -1,4 +1,4 @@
-# JustForFans Video Downloader (Browser Extension) | How to Download JustForFans Videos
+# JustForFans Video Video Downloader (Browser Extension) | How to Download JustForFans Videos
 
 > Save JustForFans videos, images, galleries, and text posts from creator feeds directly in your browser.
 
@@ -12,7 +12,7 @@ JustForFans Downloader is a browser extension built specifically for saving supp
 
 ## Links
 
-- :rocket: Get it here: [JustForFans Downloader](https://serp.ly/justforfans-downloader)
+- :rocket: Get it here: [JustForFans Downloader](https://serp.ly/justforfans-downloader?via=github)
 - :new: Latest release: [GitHub Releases](https://github.com/serpapps/justforfans-downloader/releases/latest)
 - :question: Help center: [SERP Help](https://help.serp.co/en/)
 - :beetle: Report bugs: [GitHub Issues](https://github.com/serpapps/justforfans-downloader/issues)
@@ -128,7 +128,7 @@ The extension includes DASH decryption support for encrypted streams commonly us
 - No credit card required for the trial
 - Unlimited downloads are available with a paid license
 
-Start here: [https://serp.ly/justforfans-downloader](https://serp.ly/justforfans-downloader)
+Start here: [https://serp.ly/justforfans-downloader?via=github](https://serp.ly/justforfans-downloader?via=github)
 
 ## Installation Instructions
 
