@@ -1,0 +1,10 @@
+/* Basic stylesheet for JustForFans Download Manager (non-breaking; inline styles still apply) */
+#justforfans-download-manager {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#justforfans-download-manager .cancel-download-btn:hover {
+  background-color: #f1f3f5;
+}
+#downloads-container {
+  scrollbar-width: thin;
+}

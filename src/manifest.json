@@ -1,0 +1,94 @@
+{
+  "manifest_version": 3,
+  "name": "Downloader for JustForFans",
+  "description": "Fast, private, one-click video downloads from JustForFans.",
+  "version": "4.0.10",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "downloads",
+    "activeTab",
+    "storage",
+    "notifications",
+    "contextMenus",
+    "tabs",
+    "scripting",
+    "offscreen",
+    "sidePanel"
+  ],
+  "host_permissions": [
+    "https://api.github.com/*",
+    "https://auth.serp.co/*",
+    "https://*.xvid.com/*",
+    "https://api.xvid.com/*",
+    "https://autograph.xvid.com/*",
+    "https://justfor.fans/*",
+    "https://*.justfor.fans/*"
+  ],
+  "background": {
+    "service_worker": "serp-bundles/background-service-worker.graph.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://justfor.fans/*",
+        "https://*.justfor.fans/*"
+      ],
+      "js": [
+        "serp-bundles/content-1.graph.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "action-popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "Downloader for JustForFans"
+  },
+  "side_panel": {
+    "default_path": "popup.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "inject.js",
+        "styles/download-manager.css",
+        "styles/player-button.css",
+        "bulk-saver.html",
+        "bulk-saver.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    },
+    {
+      "resources": [
+        "offscreen.html",
+        "offscreen.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    },
+    {
+      "resources": [
+        "modules/**/*"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';",
+    "sandbox": "sandbox allow-scripts allow-forms allow-popups allow-modals; script-src 'self' 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval'; child-src 'self';"
+  }
+}
